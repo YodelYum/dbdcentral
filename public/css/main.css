@@ -3,6 +3,8 @@
 	src: url("../fonts/anton.ttf");
 }
 
+
+
 * {
 	position: relative;
 	font-family: anton;
@@ -14,7 +16,7 @@
 }
 html {
 	background:#161215;
-	background: linear-gradient(135deg, #1c171b 0%, #000000 100%);
+	background: linear-gradient(135deg,#3B4A56 0%, #1c171b 25%, #000000 100%);
 	/* background: linear-gradient(180deg, #3E4B59 0%, #2A2624 100%); */
 }
 body{
@@ -58,6 +60,31 @@ h1 a{
 	padding-top: 16px;
 	border-bottom:1px solid white;
 	padding-bottom:14px;
+}
+/* @-webkit-keyframes rotate {
+	0% { transform: rotate(0deg); }
+   50% { transform: rotate(70deg);  }
+   50% { transform: rotate(-70deg);  }
+   100% { transform: rotate(0deg);  }
+}
+
+#hook_logo {
+	transition-timing-function: ease-in-out;
+	transform-origin: top right;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 30.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+} */
+#hook_logo{
+	top: 4px;
+	width: 64px;
+	transform: scaleX(-1);
+	position: absolute;
+	left: 200px;
+}
+h1 a:hover{
+	color:red;
 }
 #navigation{
 	bottom: -16px;

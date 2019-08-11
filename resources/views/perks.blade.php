@@ -20,7 +20,10 @@
 
             </div>
             <p class="floatl">{{$perk->long_name}}</p>
-            <p class="floatl font_light">Lorem ipdasd as dmet</p>
+            <p class="floatl font_light">When retrieving an Item from a Chest, there is a 100 %
+                 chance that an Add-on IconHelp addons.png of Very Rare Rarity or lower will be attached to it.
+
+<br><br>10/25/50 % chance to find a second Add-on of Uncommon Rarity or lower.</p>
                 </div>
         @endforeach
 

@@ -14,7 +14,7 @@
           <div id="content">
                <div class="row clear" id="header">
                   <div class="center_container">
-                     <h1 class="floatl"><a href="/">DBD CENTRAL</a></h1>
+                     <h1 class="floatl"><a href="/">DBD CENTRAL <img id="hook_logo" src="images/hook_icon.png" alt=""> </a></h1>
                      <ul class="floatr" id="navigation">
                           <li > <a @if($route == 'killers') style="color:red;" @endif
                                href="/killers" >KILLERS</a> </li>
