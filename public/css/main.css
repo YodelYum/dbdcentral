@@ -10,10 +10,12 @@
 	margin:0;
 	color:white;
 	box-sizing: border-box;
-	transition: all 0.382s ease;
+	/* transition: all 0.382s ease; */
 }
 html {
 	background:#161215;
+	background: linear-gradient(135deg, #1c171b 0%, #000000 100%);
+	/* background: linear-gradient(180deg, #3E4B59 0%, #2A2624 100%); */
 }
 body{
 	width: 100%;
@@ -30,6 +32,13 @@ body{
 h1 {
 	font-size: 38px;
 }
+h2{
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+h1 a{
+	text-decoration: none;
+}
 .floatl{
 	float: left;
 }
@@ -45,7 +54,10 @@ h1 {
 
 
 #header {
-	margin-top: 16px;
+	background: rgba(0,0,0,0.5);
+	padding-top: 16px;
+	border-bottom:1px solid white;
+	padding-bottom:14px;
 }
 #navigation{
 	bottom: -16px;
@@ -57,17 +69,18 @@ h1 {
 	margin-left: 16px;
 	list-style-type: none;
 }
+#navigation li a{
+	text-decoration: none;
+}
 #navigation li:hover{
 	color:#E70404;
 	cursor: pointer;
 }
 
-#main{
-	margin-top: 16px;
-}
 #slideshow {
 	overflow: hidden;
 	height:360px;
+	border-bottom:1px solid white;
 }
 #slideshow img{
 	width: 100%;
@@ -82,11 +95,16 @@ h1 {
 	margin-top:32px;
 }
 
+#news{
+	margin-top:32px;
+}
+
 .homepage_more_list {
 	width:31.33%;
 	height:480px;
 	font-size: 24px;
 	margin-right: 3%;
+	border: 1px solid #1b1b1b;
 }
 .homepage_more_list:last-child {
 	margin-right: 0;
@@ -116,19 +134,31 @@ h1 {
 }
 
 .survivor_list_item{
-	width:31.33%;
+	width:32%;
 	background:black;
 	padding:1%;
-	margin-right:3%;
+	margin-right: 2%;
+	margin-top:24px;
 }
-.survivor_list_item:last-child{
-	margin-right:0;
+.survivor_list_item div div p:nth-child(4) {
+	top:-6px;
+}
+.survivor_list_item:nth-child(3n){
+	margin-right:0px;
+}
+.survivor_list_item {
+	border: 1px solid #1b1b1b;
+	height:230px;
 }
 .survivor_list_item p{
 	font-size:24px;
 }
 .survivor_list_item_images img{
 	height:96px;
+}
+.survivor_list_item_images img:nth-child(4){
+	left:-150px;
+	top:50px;
 }
 .survivor_list_item_images div p:last-child {
 	font-size:12px !important;

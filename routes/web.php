@@ -12,5 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main',['route' => '/']);
+});
+
+
+
+Route::get('/survivors', function () {
+     $survs = DB::table('survivors')->get();
+    return view('survivors', ['survs' => $survs,
+                              'route' => 'survivors']);
+});
+
+Route::get('/killers', function () {
+     $killers = DB::table('killers')->get();
+    return view('killers', ['killers' => $killers,
+                            'route' => 'killers']);
 });
