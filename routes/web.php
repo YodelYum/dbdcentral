@@ -28,3 +28,9 @@ Route::get('/killers', function () {
     return view('killers', ['killers' => $killers,
                             'route' => 'killers']);
 });
+
+Route::get('/perks', function () {
+     $perks = DB::table('perks')->get();
+    return view('perks', ['perks' => $perks,
+                            'route' => 'perks']);
+});

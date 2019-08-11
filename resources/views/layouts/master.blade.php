@@ -20,7 +20,8 @@
                                href="/killers" >KILLERS</a> </li>
                           <li ><a @if($route == 'survivors') style="color:red;" @endif
                                 href="/survivors">SURVIVORS</a></li>
-                          <li>PERKS</li>
+                          <li ><a @if($route == 'perks') style="color:red;" @endif
+                          href="/perks">PERKS</a></li>
                           <li>BUILDS</li>
                           <li>PATCHNOTES</li>
                           <li>OTHER</li>

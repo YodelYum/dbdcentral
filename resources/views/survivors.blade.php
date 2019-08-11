@@ -18,18 +18,22 @@
     <div class="center_container clear margin_top_32">
          @foreach ($survs as $surv)
             <div class="floatl no_overflow
-            survivor_list_item border10"
-            style="background:#111 url(images/survivors/{{$surv->shortname}}_big.png) 30px -100px">
-                 <div class="survivor_list_item_images">
-                      <div class="clear">
-                           <!-- <img class="floatl" src="images/survivors/claudette_portrait.png" alt=""> -->
-                           <p class="floatl">{{ $surv->fullname }}</p>
-                           <br><br><p class="font_light italic">"I'm not dying here in this hellhole!"</p>
-                      </div>
-                      <img src="images/perks/perk__bottany_knowledge.png" alt="">
-                      <img src="images/perks/empathy.png" alt="">
-                      <img src="images/perks/selfcare.png" alt="">
-                 </div>
+            character_list_item border10" >
+                 <div class="character_list_item_images"
+                 style="background:#111 url(images/survivors/{{$surv->shortname}}_big.png)">
+                     </div>
+                         <p class="killer_fullname">{{ $surv->fullname }}</p>
+                         <p class="font_light italic killer_actualname">"I'm not dying here in this hellhole!"</p>
+
+                         <div class="perk_purple first_perk">
+                             <img class="zoomOnHover" src="images/perks/aceInTheHole.png">
+                        </div>
+                        <div class="perk_purple second_perk">
+                             <img class="zoomOnHover" src="images/perks/adrenaline.png" alt="">
+                        </div>
+                        <div class="perk_purple third_perk">
+                             <img class="zoomOnHover" src="images/perks/aftercare.png" alt="">
+                        </div>
             </div>
         @endforeach
     </div>

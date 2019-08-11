@@ -10,7 +10,7 @@
 	margin:0;
 	color:white;
 	box-sizing: border-box;
-	/* transition: all 0.382s ease; */
+	transition: all 0.382s ease !important;
 }
 html {
 	background:#161215;
@@ -72,7 +72,7 @@ h1 a{
 #navigation li a{
 	text-decoration: none;
 }
-#navigation li:hover{
+#navigation li a:hover{
 	color:#E70404;
 	cursor: pointer;
 }
@@ -133,35 +133,83 @@ h1 a{
 	background-size: cover;
 }
 
-.survivor_list_item{
+.character_list_item{
 	width:32%;
 	background:black;
-	padding:1%;
 	margin-right: 2%;
 	margin-top:24px;
 }
-.survivor_list_item div div p:nth-child(4) {
+.character_list_item div div p:nth-child(4) {
 	top:-6px;
 }
-.survivor_list_item:nth-child(3n){
+.character_list_item:nth-child(3n){
 	margin-right:0px;
 }
-.survivor_list_item {
+.character_list_item {
 	border: 1px solid #1b1b1b;
 	height:230px;
+
 }
-.survivor_list_item p{
+.character_list_item:hover{
+	cursor: pointer;
+}
+.character_list_item_images:hover{
+	transform: scale(-1.1, 1.1);
+}
+.character_list_item p{
 	font-size:24px;
 }
-.survivor_list_item_images img{
+
+.killer_fullname{
+	position: absolute;
+	top:8px;
+	left:8px;
+}
+.killer_actualname{
+	position: absolute;
+	top:48px;
+	left:8px;
+	font-size:14px !important;
+}
+.first_perk{
+	position: absolute;
+	top:72px;
+	left:8px;
+}
+.second_perk{
+	position: absolute;
+	top:72px;
+	left:106px;
+}
+.third_perk{
+	position: absolute;
+	top:122px;
+	left:57px;
+}
+.first_perk img, .second_perk img, .third_perk img{
+	width: 100%;
+	height:100%;
+}
+.character_list_item_images{
+	padding:12px;
+	height:100%;
+	width:100%;
+	transform: scaleX(-1);
+	background-position: -128px -64px !important;
+}
+.character_list_item_images img{
 	height:96px;
 }
-.survivor_list_item_images img:nth-child(4){
+.character_list_item_images img:nth-child(4){
 	left:-150px;
 	top:50px;
 }
-.survivor_list_item_images div p:last-child {
-	font-size:12px !important;
+
+.perk_purple{
+	background:url(../images/perks/perk_purple.png);
+	background-size: contain;
+	width:96px;
+	height:96px;
 }
 
 #footer{
@@ -172,7 +220,9 @@ h1 a{
 
 
 
-
+.zoomOnHover:hover{
+	transform: scale(1.2);
+}
 .no_overflow {
 	overflow: hidden;
 }
@@ -188,10 +238,9 @@ h1 a{
 .font_light{
 	font-family: Roboto;
 	font-weight: 100;
-	font-size: 28px !important;
 }
 .italic {
-	font-style: italic;;
+	font-style: italic;
 }
 
 .clear:after {
