@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/abf73c4a8d.js"></script>
         <title>@yield('title')</title>
     </head>
     <body>
@@ -23,8 +24,8 @@
                           <li ><a @if($route == 'perks') style="color:red;" @endif
                           href="/perks">PERKS</a></li>
                           <li>BUILDS</li>
-                          <li>PATCHNOTES</li>
-                          <li>OTHER</li>
+                          <li>TOOLS</li>
+                          <li>KMOWLEDGEBASE</li>
                           <li style="color:#890A2F;">MEMES</li>
                      </ul>
                   </div>

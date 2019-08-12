@@ -83,6 +83,26 @@ h1 a{
 	position: absolute;
 	left: 200px;
 }
+.color_chest{
+	color:turquoise;
+	font-family: Roboto;
+	font-weight: bold !important;
+}
+.color_green{
+	color:green;
+	font-family: Roboto;
+	font-weight: bold !important;
+}
+.color_purple{
+	color:purple;
+	font-family: Roboto;
+	font-weight: bold !important;
+}
+.color_ultrared{
+	color:red;
+	font-family: Roboto;
+	font-weight: bold !important;
+}
 h1 a:hover{
 	color:red;
 }

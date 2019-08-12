@@ -25,11 +25,7 @@ Route::get('/survivors', function () {
                               'route' => 'survivors']);
 });
 
-Route::get('/killers', function () {
-     $killers = DB::table('killers')->get();
-    return view('killers', ['killers' => $killers,
-                            'route' => 'killers']);
-});
+Route::get('/killers', 'KillersController@index');
 
 Route::get('/perks', 'PerksController@index');
 

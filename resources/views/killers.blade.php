@@ -9,25 +9,24 @@
 <div class="row clear center_container" id="homepage_more">
 <h2 class="">KILLERS</h2>
 
-
     <div class="center_container clear margin_top_32">
          @foreach ($killers as $killer)
             <div class="floatl no_overflow
             character_list_item border10">
                  <div class="character_list_item_images"
-                 style="background:#111 url(images/killers/{{$killer->shortname}}_big.png)">
+                 style="background:#111 url(images/killers/{{$killer->short_name}}_big.png)">
                  </div>
-                 <p class="killer_fullname">{{ $killer->fullname }}</p>
-                 <p class="font_light italic killer_actualname">{{$killer->actual_name}}</p>
+                 <p class="killer_fullname">{{ $killer->long_name }}</p>
+                 <p class="font_light italic killer_actualname">{{$killer->long_name}}</p>
 
                  <div class="perk_purple first_perk">
-                      <img class="zoomOnHover" src="images/perks/aceInTheHole.png">
+                      <img class="zoomOnHover" src="images/perks/{{$killer->perk1}}.png">
                  </div>
                  <div class="perk_purple second_perk">
-                      <img class="zoomOnHover" src="images/perks/adrenaline.png" alt="">
+                      <img class="zoomOnHover" src="images/perks/{{$killer->perk2}}.png" alt="">
                  </div>
                  <div class="perk_purple third_perk">
-                      <img class="zoomOnHover" src="images/perks/aftercare.png" alt="">
+                      <img class="zoomOnHover" src="images/perks/{{$killer->perk3}}.png" alt="">
                  </div>
             </div>
         @endforeach
