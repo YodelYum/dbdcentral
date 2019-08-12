@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 
 
+
+
 Route::get('/survivors', function () {
      $survs = DB::table('survivors')->get();
     return view('survivors', ['survs' => $survs,
@@ -29,8 +31,8 @@ Route::get('/killers', function () {
                             'route' => 'killers']);
 });
 
-Route::get('/perks', function () {
-     $perks = DB::table('perks')->get();
-    return view('perks', ['perks' => $perks,
-                            'route' => 'perks']);
-});
+Route::get('/perks', 'PerksController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
