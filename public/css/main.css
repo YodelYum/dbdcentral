@@ -12,7 +12,7 @@
 	margin:0;
 	color:white;
 	box-sizing: border-box;
-	transition: all 0.382s ease !important;
+	transition: all 0.38s ease !important;
 }
 html {
 	background:#161215;
@@ -203,6 +203,9 @@ h1 a:hover{
 .character_list_item_images:hover{
 	transform: scale(-1.1, 1.1);
 }
+.character_list_item:hover p{
+
+}
 .character_list_item p{
 	font-size:24px;
 }
@@ -242,7 +245,8 @@ h1 a:hover{
 	height:100%;
 	width:100%;
 	transform: scaleX(-1);
-	background-position: -128px -64px !important;
+	background-position: -148px -64px !important;
+	filter: brightness(2);
 }
 .character_list_item_images img{
 	height:96px;
