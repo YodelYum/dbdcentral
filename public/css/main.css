@@ -103,6 +103,9 @@ h1 a{
 	font-family: Roboto;
 	font-weight: bold !important;
 }
+.color_orange{
+	color:orange;
+}
 h1 a:hover{
 	color:red;
 }
@@ -247,6 +250,7 @@ h1 a:hover{
 	transform: scaleX(-1);
 	background-position: -148px -64px !important;
 	filter: brightness(2);
+	background-repeat: no-repeat !important;
 }
 .character_list_item_images img{
 	height:96px;
@@ -269,7 +273,14 @@ h1 a:hover{
 	padding:8px;
 }
 
+#perks_survs_list :nth-child(even){
+	margin-left:-22px;
+	margin-top:-48px;
+}
+#perks_survs_list :nth-child(odd){
+margin-left:-22px;
 
+}
 
 .zoomOnHover:hover{
 	transform: scale(1.2);
@@ -295,19 +306,24 @@ h1 a:hover{
 }
 .button_dark{
 	border:1px solid #666;
-	background: linear-gradient(#333, #222);
+	background: linear-gradient(#222, #444);
+	background: #1C2328;
 	padding:8px 16px;
 	font-size:14px;
 	font-size: 21px;
+	border:none;
+	box-shadow: inset 0px 0px 5px black;
 }
 .button_light{
 	border:1px solid #111;
 	border-left:none;
-	background: linear-gradient(#eee, #ddd);
+	background: linear-gradient(#888, #666);
 	padding:8px 16px;
 	font-size:14px;
 	font-size: 21px;
-	color:#222;
+	color:#fff;
+	border:none;
+
 }
 .button_rounded_left{
 	border-radius:8px 0 0 8px;

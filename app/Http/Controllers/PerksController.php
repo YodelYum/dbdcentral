@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Perk;
+use App\Survivor;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Log;
 
@@ -37,7 +38,8 @@ class PerksController extends Controller
 		//     $v -> save();
    	    // }
 	    $perks = Perk::all();
+         $survs = Survivor::all();
 
-	    return view('perks', ['perks' => $perks, 'route' => 'perks']);
+	    return view('perks', ['perks' => $perks, 'survs' => $survs, 'route' => 'perks']);
     }
 }
