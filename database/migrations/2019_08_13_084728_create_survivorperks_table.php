@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateKillerperksTable extends Migration
+class CreateSurvivorperksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateKillerperksTable extends Migration
      */
     public function up()
     {
-        Schema::create('killerperks', function (Blueprint $table) {
+        Schema::create('survivorperks', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('killerID');
-            $table->integer('perkID');
-		  $table->foreign('killerID')->references('id')->on('killers');
-		  $table->foreign('perkID')->references('id')->on('perks');
             $table->timestamps();
+		  $table->integer('survivorID');
+            $table->integer('perkID');
         });
     }
 
@@ -30,6 +28,6 @@ class CreateKillerperksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('killerperks');
+        Schema::dropIfExists('survivorperks');
     }
 }

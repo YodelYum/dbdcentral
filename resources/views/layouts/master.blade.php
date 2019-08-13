@@ -1,4 +1,4 @@
-<!-- Stored in app/views/layouts/master.blade.php -->
+ <!-- Stored in app/views/layouts/master.blade.php -->
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -26,7 +26,7 @@
                           <li>BUILDS</li>
                           <li>TOOLS</li>
                           <li>KMOWLEDGEBASE</li>
-                          <li style="color:#890A2F;">MEMES</li>
+                          <li style="color:#EA0954;">MEMES</li>
                      </ul>
                   </div>
               </div>

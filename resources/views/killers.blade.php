@@ -17,7 +17,7 @@
                  style="background:#111 url(images/killers/{{$killer->short_name}}_big.png)">
                  </div>
                  <p class="killer_fullname">{{ $killer->long_name }}</p>
-                 <p class="font_light italic killer_actualname">{{$killer->long_name}}</p>
+                 <p class="font_light italic killer_actualname" style="font-size:16px !important;">{{ $killer->real_name }}</p>
 
                  <div class="perk_purple first_perk">
                       <img class="zoomOnHover" src="images/perks/{{$killer->perk1}}.png">
